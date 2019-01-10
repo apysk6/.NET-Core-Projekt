@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Users\Arthur\source\repos\GuitarProjectWebsite\GuitarProjectWebsite\obj\Release\netcoreapp2.2\PubTmp\Out\" />
+  <dbfullsql path="C:\Users\Arthur\source\repos\GuitarProjectWebsite\GuitarProjectWebsite\obj\Release\netcoreapp2.2\PubTmp\EFSQLScripts\GuitarProjectWebsite.Data.ApplicationDbContext.sql" />
+</sitemanifest>

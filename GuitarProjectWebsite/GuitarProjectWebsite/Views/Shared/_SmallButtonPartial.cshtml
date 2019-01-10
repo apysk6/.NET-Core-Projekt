@@ -1,0 +1,7 @@
+﻿@model GuitarProjectWebsite.Areas.Admin.Models.SmallButtonModel
+
+<a type="button" bc-tooltip="@Model.Tooltip" class="btn @Model.ButtonType btn-sm"
+   href="@Url.Action(Model.Action)@Model.ActionParameters">
+    <span class="glyphicon glyphicon-@Model.Glyph"></span>
+    <span class="sr-only">@Model.Text</span>
+</a>

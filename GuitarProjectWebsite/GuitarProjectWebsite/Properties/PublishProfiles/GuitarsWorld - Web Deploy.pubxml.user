@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk3hwfycCOEydihlI3nOw8QAAAAACAAAAAAAQZgAAAAEAACAAAACUv5Nj0munUgsWfRLAPMBl4NsCN1ba3SiSM6bzIkyjiAAAAAAOgAAAAAIAACAAAAAhwmrizibU8tPfaaKmfAaSjRVNConvjak2AhA+qx/bioAAAAAMW0fMSumGGrfh0W2J1HTs0Z755F9AFjEvtxCeLfGio58orJtatiKKp1ytlAOH/Xs29N9KRSwJ2mTFW4TsJEuDfPgfh1sADQL/y9X1LLoDJltS8AKYKK2NomzY4JAhLxaqsLif2qiSXuHZoYzqfDm3tK/kslwqiGFKbDRY3pT5EUAAAABtGHy51uhxkkahMt2mM81qxIw7qUXhRfRP/SzUQFdje1GKrEXW7qa/CnFmTYKNvRBvKLtkd4Adp7nEpTS0MR8b</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=%28localdb%29\mssqllocaldb%3bDatabase=aspnet-GuitarProjectWebsite-CE2B5611-E8C6-4B88-92E4-87798400FD2B%3bTrusted_Connection=True%3bMultipleActiveResultSets=true</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="GuitarProjectWebsite.Data.GuitarDbContext">
+      <Value>
+      </Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

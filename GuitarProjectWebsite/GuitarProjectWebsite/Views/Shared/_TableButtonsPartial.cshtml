@@ -1,0 +1,48 @@
+﻿@model GuitarProjectWebsite.Areas.Admin.Models.SmallButtonModel
+@using GuitarProjectWebsite.Areas.Admin.Models;
+
+<td style="width:120px;">
+    <div class="btn-group" role="group">
+        <partial name="_SmallButtonPartial" , model="@{new SmallButtonModel
+                     {
+                         Action = "Edit",
+                         ButtonType = "btn-primary",
+                         Glyph = "pencil",
+                         Text = "Edit button",
+                         GuitarId = Model.GuitarId,
+                         ProducerId = Model.ProducerId,
+                         CategoryId = Model.CategoryId,
+                         UserId = Model.UserId
+                     }}" />
+
+
+        <partial name="_SmallButtonPartial" , model="@{new SmallButtonModel
+                {
+                Action = "Details",
+            ButtonType = "btn-success",
+            Glyph = "list",
+            Text = "Details button",
+            GuitarId = Model.GuitarId,
+            ProducerId = Model.ProducerId,
+            CategoryId = Model.CategoryId,
+            UserId = Model.UserId
+                    }}" />
+
+
+        @if (User.IsInRole("Admin"))
+        {
+<partial name="_SmallButtonPartial" , model="@{new SmallButtonModel
+                {
+    Action = "Delete",
+    ButtonType = "btn-danger",
+    Glyph = "trash",
+    Text = "Delete button",
+    GuitarId = Model.GuitarId,
+    ProducerId = Model.ProducerId,
+    CategoryId = Model.CategoryId,
+    UserId = Model.UserId
+}}" />
+}
+
+    </div>
+</td>

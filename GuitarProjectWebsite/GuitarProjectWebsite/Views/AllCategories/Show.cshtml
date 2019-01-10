@@ -1,0 +1,21 @@
+﻿@model IEnumerable<GuitarProjectWebsite.Models.GuitarViewModel>
+@using GuitarProjectWebsite.Areas.Admin.Models;
+
+@{
+    ViewData["Title"] = "Show";
+}
+
+<h1 asp-if="@Model.ToList().Any()">@Model.First().Category</h1>
+
+@foreach (var item in Model)
+{
+    <card style="margin: 15px">
+        <card-image style="width: 200px" src="data:image/jpeg;base64,@Convert.ToBase64String(item.Image)" bc-position="Bottom"/>
+        <card-body bc-title="@item.Name">
+            <p>
+                @item.Description
+            </p>
+            <a href="@item.Website" bc-button="true">Visit producer website</a>
+        </card-body>
+    </card>
+}

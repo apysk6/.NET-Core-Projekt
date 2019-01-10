@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model IEnumerable<GuitarProjectWebsite.Models.Category>
+
+<container>
+    <row vertical-alignment="Middle">
+        <column>
+            <carousel bc-controls="true" bc-fade="true" bc-indicators="true" style="margin:30px">
+                <carousel-item bc-src="~/guitar2.jpg" bc-alt="Slide 1" bc-active="true">
+                    <h3>Guitars signed by famous guitarists!</h3>
+                    <p>
+                        John Mayer Signature
+                    </p>
+                </carousel-item>
+                <carousel-item bc-src="~/guitar1.jpg" bc-alt="Slide 2">
+                    <h3>All the most famous models!</h3>
+                    <p>
+                        Matt Bellamy Cort Signature
+                    </p>
+                </carousel-item>
+                <carousel-item bc-src="~/guitar3.jpg" bc-alt="Slide 3">
+                    <h3>Check it out</h3>
+                    <p>
+                        Check all the guitars from around the world and chose one for yourself!
+                    </p>
+                </carousel-item>
+            </carousel>
+        </column>
+    </row>
+</container>

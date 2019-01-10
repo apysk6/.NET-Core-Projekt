@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="GuitarsWorld" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Arthur\\source\\repos\\GuitarProjectWebsite\\GuitarProjectWebsite\\obj\\Release\\netcoreapp2\.2\\PubTmp\\Out\\$" />
+  </parameter>
+  <parameter name="GuitarProjectWebsite.Data.ApplicationDbContext" description="" value="Data Source=tcp:guitarsworlddbserver.database.windows.net,1433;Initial Catalog=GuitarsWorld_db;User Id=apysk@guitarsworlddbserver;Password=Carbon66" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\Arthur\\source\\repos\\GuitarProjectWebsite\\GuitarProjectWebsite\\obj\\Release\\netcoreapp2\.2\\PubTmp\\EFSQLScripts\\GuitarProjectWebsite\.Data\.ApplicationDbContext\.sql$" />
+  </parameter>
+</parameters>

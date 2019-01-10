@@ -1,0 +1,18 @@
+﻿@model IEnumerable<GuitarProjectWebsite.Models.Category>
+@using GuitarProjectWebsite.Areas.Admin.Models;
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Categories</h1>
+
+<list-group>
+    @foreach (var item in Model)
+    {
+        <list-group-item>
+            <a class="nav-link text-dark" href="AllCategories/Show/@item.ID">@item.Name</a>
+        </list-group-item>
+    }
+</list-group>
+
